@@ -11,7 +11,7 @@ const forecast = (longtitude, latitude, callback) => {
             callback('try another location', undefined);
 
         } else {
-            callback(undefined, body.currently.summary);
+            callback(undefined, `${body.currently.summary} and max temp is ${body.currently.summary}`);
 
         }
     });
