@@ -9,7 +9,7 @@ submitForm.addEventListener('submit', (e) => {
     
     parag1.textContent = 'Loading ...';
     parag2.textContent = '';
-    fetch(`http://localhost:3000/weather/?address=${location}`).then((response) => {
+    fetch(`/weather/?address=${location}`).then((response) => {
     response.json().then((data) => {
         if(data.error){
             parag1.textContent = data.error;
