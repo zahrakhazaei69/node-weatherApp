@@ -1,5 +1,3 @@
-console.log('this is a javascript client side page!');
-
 const submitForm = document.querySelector('form');
 const search = document.querySelector('input');
 const parag1 = document.querySelector('#msg-1');
